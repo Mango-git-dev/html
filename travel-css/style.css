@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #263238;
+  background-color: #eef3f7;
+}
+
+a {
+  color: #0b6fb8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #0b6fb8;
+  color: #ffffff;
+  text-align: center;
+  padding: 28px 16px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+nav {
+  background-color: #084d80;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li a {
+  display: block;
+  padding: 14px 22px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #f4a300;
+  color: #263238;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #d5dde3;
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f4a300;
+  color: #084d80;
+  font-size: 22px;
+}
+
+.quick-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quick-links a {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 16px;
+  border: 1px solid #0b6fb8;
+  border-radius: 20px;
+}
+
+.quick-links a:hover {
+  background-color: #0b6fb8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul, ol {
+  padding-left: 28px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+li ul {
+  margin-top: 4px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.gallery img {
+  display: block;
+  border-radius: 6px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery a img:hover {
+  transform: scale(1.04);
+  border-color: #f4a300;
+}
+
+.detail img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 18px;
+  background-color: #0b6fb8;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.back-link:hover {
+  background-color: #084d80;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #263238;
+  color: #cfd8dc;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li a {
+    text-align: center;
+    border-top: 1px solid #0b6fb8;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
+}
